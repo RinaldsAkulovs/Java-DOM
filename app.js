@@ -31,12 +31,19 @@
 //bookList.innerHTML = '<h2>Books and more books...</h2>';
 //bookList.innerHTML += '<p>This is how you add HTML</p>';
 
-const banner = document.querySelector('#page-banner');
+//const banner = document.querySelector('#page-banner');
 
-console.log('#page-banner node type is:', banner.nodeType);
-console.log('#page-banner node name is:', banner.nodeName);
-console.log('#page-banner has child nodes is:', banner.hasChildNodes())
+//console.log('#page-banner node type is:', banner.nodeType);
+//console.log('#page-banner node name is:', banner.nodeName);
+//console.log('#page-banner has child nodes is:', banner.hasChildNodes())
 
 
-const clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner);
+//const clonedBanner = banner.cloneNode(true);
+//console.log(clonedBanner);
+
+const bookList = document.querySelector('#book-list');
+
+console.log('#the parent node is;',bookList.parentNode);
+console.log('#the parent element is;',bookList.parentElement.parentElement);
+
+console.log(bookList.children);
